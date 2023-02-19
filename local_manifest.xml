@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+        <!-- Remotes -->
+
+        <remote name="redznn" fetch="https://github.com/redznn" />
+        <remote name="exynos850" fetch="https://github.com/exynos850-crdroid12L" />
+        <remote name="LineageOS" fetch="https://github.com/LineageOS" />
+        <remote name="ArrowOS" fetch="https://github.com/ArrowOS-Devices" />
+        
+                <!-- Device Trees -->
+
+        <project path="device/samsung/exynos850-common" name="android_device_samsung_exynos850-common" remote="exynos850" revision="Pixel-12.1" />
+        <project path="device/samsung/m12" name="android_device_samsung_m12" remote="redznn" revision="lineage-19.1" />
+        
+                <!-- Kernel -->
+
+        <project path="kernel/samsung/exynos850" name="android_kernel_samsung_exynos850" remote="redznn" revision="lineage-19.1" />
+        
+               <!-- Vendor Trees -->
+               
+        <project path="vendor/samsung/exynos850-common" name="android_vendor_samsung_exynos850-common" remote="redznn" revision="lineage-19.1" />
+        
+              <!-- Dependencies -->
+        
+        <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="LineageOS" revision="lineage-19.1" />
+        <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" remote="LineageOS" revision="lineage-19.1" />
+        <project path=" hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" remote="LineageOS" revision="lineage-19.1" />
+        <project path="hardware/samsung_slsi/libbt" name="android_hardware_samsung_slsi_libbt" remote="LineageOS" revision="lineage-19.1" />
+        <project path="hardware/samsung" name="android_hardware_samsung" remote="ArrowOS" revision="lineage-19.1" />
